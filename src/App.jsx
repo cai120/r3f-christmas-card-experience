@@ -84,14 +84,14 @@ function App() {
         }
     }
 
-    generateSnowflakes();
+    // generateSnowflakes();
 
-    window.addEventListener("resize", () => {
-        clearInterval(snowflakeInterval);
-        setTimeout(generateSnowflakes, 1000);
-    });
+    // window.addEventListener("resize", () => {
+    //     clearInterval(snowflakeInterval);
+    //     setTimeout(generateSnowflakes, 1000);
+    // });
 
-    document.addEventListener("visibilitychange", handleVisibilityChange);
+    // document.addEventListener("visibilitychange", handleVisibilityChange);
   });
 
   const { focusDistance, focalLength, bokehScale } = useControls(
