@@ -4,7 +4,8 @@ import { randFloat } from "three/src/math/MathUtils";
 import { ChristmasTree } from "./ChristmasTree";
 import { Gift } from "./Gift";
 import { MerryChristmasText } from "./MerryChristmasText";
-import { Santa } from "./Santa";
+import { MerryChristmasMiaText } from "./MerryChristmasMiaText";
+// import { Santa } from "./Santa";
 import { Stage } from "./Stage";
 
 const GIFTS_NBR = 120;
@@ -77,8 +78,10 @@ export const Experience = () => {
         <group position={[0, -3, 0]}>
           <Gifts />
         </group>
-        <Santa animationIndex={0} position={[-2, -3, 3]} scale={[2, 2, 2]} />
-        <Santa animationIndex={1} position={[2, -3, 3]} scale={[2, 2, 2]} />
+        {/* <Santa animationIndex={0} position={[-2, -3, 3]} scale={[2, 2, 2]} />
+        <Santa animationIndex={1} position={[2, -3, 3]} scale={[2, 2, 2]} /> */}
+        <MerryChristmasMiaText />
+
         <Stage position={[0, 0, -20]} rotation={[Math.PI / 2, 0, 0]} />
       </ScrollControls>
       <Stars />
