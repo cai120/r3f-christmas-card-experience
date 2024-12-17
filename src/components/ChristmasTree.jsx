@@ -24,7 +24,7 @@ export function ChristmasTree(props) {
   const [initialPosition] = useState(props.position);
   const [hoveredStar, setHoveredStar] = useState(false);
   const [christmasSound] = useState(
-    () => new Audio("./audios/ES_Here Comes Lofi Claus - Guustavv.mp3")
+    () => new Audio("./audios/The Pogues - Fairytale Of New York.mp3")
   );
   christmasSound.loop = true;
   useFrame((state, delta) => {
